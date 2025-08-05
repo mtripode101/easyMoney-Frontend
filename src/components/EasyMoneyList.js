@@ -8,7 +8,7 @@ function EasyMoneyList() {
   useEffect(() => {
     api.get('')
       .then(response => {
-        console.log('Data received:', response.data);
+        console.log('Data received to test:', response.data);
         setEntries(response.data);
         setLoading(false);
       })
